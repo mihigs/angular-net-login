@@ -1,0 +1,24 @@
+.new-user-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+}
+
+.new-user-form-field{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-user-input-field{
+    margin: 10px;
+}
+
+.new-user-button{
+    width: 70%;
+}

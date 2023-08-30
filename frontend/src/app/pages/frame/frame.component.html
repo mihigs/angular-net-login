@@ -1,0 +1,20 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav class="mat-elevation-z8" #sidenav mode="side" [(opened)]="menuOpen">
+
+        <div *ngFor="let menuOption of menuOptions">
+            <button mat-button class="menu-button" (click)="onMenuItemClicked(menuOption)">
+                <mat-icon>{{menuOption.icon}}</mat-icon>
+                <span>{{menuOption.name}}</span>
+            </button>
+        </div>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z8">
+            <button mat-icon-button class="menu-toggle-button" (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
